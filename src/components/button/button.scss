@@ -1,0 +1,29 @@
+@import '../../theme.scss';
+
+.button {
+  @include unselectable;
+  @extend %font-button-text;
+  background-color: $yellow;
+  padding: 12px;
+  border-radius: 5px;
+  border: solid 2px transparent;
+  min-width: 100px;
+  &:hover {
+    border-color: $black;
+    cursor: pointer;
+  }
+  &:active {
+    background-color: mixWhite($yellow, 70);
+    color: mixWhite($black, 70);
+    border-color: $yellow;
+  }
+
+  &--secondary {
+    @extend .button;
+    background-color: $gray;
+    &:active {
+      background-color: mixWhite($gray, 70);
+      border-color: transparent;
+    }
+  }
+}

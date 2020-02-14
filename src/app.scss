@@ -1,0 +1,19 @@
+@import 'theme';
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  color: $black;
+}
+
+.app {
+  * {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+body {
+  margin: 0;
+}
